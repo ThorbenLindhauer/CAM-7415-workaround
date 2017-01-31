@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://www.omg.org/spec/DMN/20151101/dmn.xsd" xmlns:biodi="http://bpmn.io/schema/dmn/biodi/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="definitions_1oknicg" name="definitions" namespace="http://camunda.org/schema/1.0/dmn">
+  <decision id="arkRulesTest" name="ARK Rules">
+    <extensionElements>
+      <biodi:bounds x="498" y="172" width="180" height="80" />
+    </extensionElements>
+    <decisionTable id="decisionTable" hitPolicy="FIRST">
+      <input id="InputClause_08bmu3t" label="Schadensland" camunda:inputVariable="">
+        <inputExpression id="LiteralExpression_1s4ply1" typeRef="string">        <text><![CDATA["DE"]]></text>
+</inputExpression>
+      </input>
+      <output id="output1" label="Valide" name="arkRulesValid" typeRef="boolean" />
+      <rule id="row-956664338-1">
+        <inputEntry id="UnaryTests_19i5jmh">        <text><![CDATA["DE"]]></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_14wx8h6" expressionLanguage="juel">        <text>true</text>
+</outputEntry>
+      </rule>
+      <rule id="row-159531614-1">
+        <inputEntry id="UnaryTests_11n9h8k">        <text></text>
+</inputEntry>
+        <outputEntry id="LiteralExpression_0z9utvb" expressionLanguage="juel">        <text>false</text>
+</outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+</definitions>
